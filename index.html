@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Titre de la page</title>
+</head>
+
+<body>
+    <!-- Tout votre HTML doit se trouver après cette ligne -->
+
+    <!-- ici code du nav bar-->
+    <nav class="navbar">
+    
+        <div>
+            <a class="nav-link" href="">projets</a>
+            <a class="nav-link" href="">About me</a>
+            <a class="nav-link" href="">Contact</a>
+        </div>
+
+        <div>
+            <a class="button" href="">Me contacter</a>
+        </div>
+    </nav>
+
+    <!--code de la 1ere image et son texte-->
+    <header class="page-header">
+        <div class="header-left">
+            <h1 class="mb-2">Je crée,j'apprend j'innove</h1>
+            <p class="mb-2 text-gray">
+                J'apprend de nouvelles choses afin d'étendre mes connaissances
+            </p>
+           
+        </div>
+
+        <div class="header-right">
+            <img class="header-img" src="images/portrait-photo.JPG" alt="">
+            <div class="header-legend">
+                <h2>Louis Gaston BAYA</h2>
+            </div>
+        </div>
+    </header>
+
+    <!--partie projet-->
+
+    <div class="projet-text1_2">
+        <H2>Projets</H2>
+    </div>
+
+
+    <div class="background-color-projets">
+        <section class="section-projet">
+            <div class="projet">
+                <img src="images/Photo-1.JPG" alt="photo de projet1 ">
+                <div class="projet-texte1">
+                <h3>Projet photographie</h3>
+                <p>Ceci a été.....
+                   
+                </p>
+                </div>
+            </div>
+
+
+            <div class="projet">
+                <img src="images/Meca_early.png" alt="photo de projet2">
+                <div class="projet-texte1">
+                    <h3>Projet méca</h3>
+                    <p>Ceci  a été....
+                        
+                        
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!--partie du about me-->
+
+    <div class="background-color-about">
+        <section class="section-about">
+            <h2 class="titre-about">About me</h2>
+            <p class="about-texte"> 
+                JZCCIZCZIUHEIUHZDHZIHZIDZIKLEDZDZEDZ
+                ZDZZDEZDZEDZEDEZEDZEDZEDZDZ
+                DZEDEZDEZDZDZDZEDZDZD
+                ZDZDZEDZEDZEDZDZEDZDZ
+            </p>
+        </section>
+    </div>
+
+
+    <!--partie contact-->
+    <section class="section-contact">
+        <h2 class="contact-title mb-2">Contactez-moi</h2>
+
+        <form class="contact-form" action="" novalidate>
+
+            <input id="name-input" type="text" placeholder="Nom">
+            <p class="name-error hidden">Remplissez le nom</p>
+
+            <input id="email-input" type="email" placeholder="E-mail">
+            <p class="email-error hidden">Remplissez l'email</p>
+            
+            <textarea id="message" placeholder="Message"></textarea>
+            <p class="message-error hidden">Remplissez le message</p>
+            
+            <input id="button-submit" type="submit" value="Envoyer">
+            <p class="form-success hidden">Message bien envoyé !</p>
+
+        </form>
+        
+    </section>
+
+
+    <!-- Ne rien écrire ni modifier en dessous de cette ligne -->
+    <script src="javascript.js"></script>
+
+</body>
+</html>

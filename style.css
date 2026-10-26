@@ -1,0 +1,271 @@
+/* Global reset basique : */
+/* Pour garantir une apparence homogène entre différents navigateurs */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tout votre code CSS doit se trouver en dessous de cette ligne */
+
+/* STYLE GENERAL ***************************/
+
+body {
+    color: #fffeff;
+    font-family: Inter;
+    background-color: #2e2d2d;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Rajdhani;
+}
+
+a {
+    /* ne pas souligner les liens */
+    text-decoration: none;
+    font-family: Rajdhani;
+    color: #fffeff;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    color: #ffffff;
+}
+
+.button,
+.button-2,
+#button-submit {
+    font-family: Rajdhani;
+    font-size: 1.3rem;
+    color: #fffeff;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    transition: all 150ms ease;
+}
+
+.button,
+#button-submit {
+    background-color: #433c46;
+}
+
+.button-2 {
+    border: 2px solid #d504ff;
+}
+
+.button:hover,
+.button-2:hover,
+#button-submit:hover  {
+    background-color: #2e3263;
+}
+
+/* UTILITAIRE */
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.text-gray {
+    color: #8c85a1;
+}
+
+.text-red {
+    color: rgb(68, 0, 255);
+}
+
+.glow {
+    text-shadow: 2px 2px 5px rgb(17, 0, 255);
+}
+
+/* NAVBAR ****************************/
+
+.navbar {
+    display: flex;
+    /* étaler les enfants sur la largeur */
+    justify-content: space-between;
+    /* centrer les enfants sur l'axe vertical */
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-bottom: 1px solid #5a283b;
+    backdrop-filter: blur(10px);
+    background-color: #d8589e;
+}
+
+/* liens dans la navbar */
+.nav-link {
+    padding: 1.2rem;
+    border-radius: 1rem;
+    transition: all 150ms ease;
+}
+
+/* :hover = quand on passe la souris dessus */
+.nav-link:hover {
+    background-color: #96058a;
+}
+
+/* HEADER ************************ */
+
+
+.page-header {
+    display: flex;
+    max-width: 64rem;
+    margin: auto;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+
+
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header-img {
+    max-width: 100%;
+    display: block;
+}
+
+.header-legend {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #282c5a;
+    padding: 1rem 2rem;
+}
+
+.header-right {
+    border: 2px solid #282c5a;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+/* SECTION  projet ************************* */
+
+.projet-text1_2{
+    text-align: center;
+}
+
+.background-color-projets{
+    background-color: #fdfdfd;
+    padding-bottom: 2rem;
+}
+
+
+.section-projet {
+    max-width: 64rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+
+.projet{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.projet img{
+    width: 50%;
+    object-fit: cover;
+}
+.projet-texte1{
+    width: 50%;
+    p{
+        color: #0b0d22;
+    }
+    h3{
+        color: #0b0d22;
+    }
+}
+.actu1 {
+    
+    height: 25rem;
+}
+
+
+
+
+/*about me  CSS part */
+.section-about{
+max-width: 48rem;
+margin:auto;
+padding: 4rem 1rem;
+text-align: center;
+}
+.background-color-about{
+    background-color: #8c85a1;
+}
+
+
+/* SECTION CONTACT ********************************** */
+
+.section-contact {
+    max-width: 64rem;
+    margin: auto;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 3rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25rem;
+
+    input,
+    textarea {
+        border: 2px solid #282c5a;
+        border-radius: 10px;
+        padding: 0.8rem;
+        background-color: #0b0d22;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #8c85a1;
+        font-style: italic;
+    }
+
+    #button-submit {
+        border: none;
+    }
+}
+
+/* FORMULAIRE ***** */
+
+.name-error,
+.email-error,
+.message-error {
+    color: #6e50fd;
+}
+
+.form-success {
+    font-family: Rajdhani;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #6e50fd;
+}
+
+.hidden {
+    display: none;
+}
